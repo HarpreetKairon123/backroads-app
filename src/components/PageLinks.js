@@ -5,7 +5,7 @@ const PageLinks = ({ parentClass, itemClass }) => {
   return (
     <ul className={parentClass} id="nav-links">
       {pageLinks.map((link) => {
-        const { href, text, id } = link;
+        const { id } = link;
         return <PageLink key={id} {...link} itemClass={itemClass} />;
       })}
     </ul>
